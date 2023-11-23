@@ -57,9 +57,9 @@ Functions and their purposes:
 
     4. addStudent
 
-        This function asks for the attributes for a new student (e.g., first name, last name, etc.)
-        and error checks them. Once deemed valid, this function adds the information to the students
-        table if it exists.
+        This function takes in parameters (first_name, last_name, email, enrollment_date). The function
+        assumes that the parameters given are valid (which the code checks before passing it in).
+        The function then updates the Students database.
 
     5. validate_enrollment_date
 
@@ -89,8 +89,9 @@ Functions and their purposes:
 
     10. updateStudentEmail
 
-        This function asks for current and new email and updates the email of a student with the given email in 
-        the students table if the student with the given email exists and the table exists.
+        This function takes in a student_id and a email. The function assumes that the parameters passed in are
+        valid (which the code does before passing to the function). The function then updates the students email
+        address.
 
     11. student_with_email_exists
 
@@ -103,7 +104,8 @@ Functions and their purposes:
 
     13. student_id_exists
 
-        This function determines if a student with the given ID exists in the students table.
+        This function takes in a student id and deletes the student with the given student id. The function assumes that
+        the student id passed in is valid (which the code currently does before passing it in).
 
 
 DEMONSTRATION VIDEO LINK: https://youtu.be/KCJ7OgZnvJs
